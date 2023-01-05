@@ -2,24 +2,24 @@ import { login } from './utils';
 import './index.css';
 import { useState } from 'react';
 
-// Instruções:
-// * Você tem um formulário de login INCOMPLETO
-// * Não é permitido adicionar novos elementos HTML
-// * Não é permitido usar refs
+// Instructions:
+// * You have an INCOMPLETE login form
+// * Adding new HTML elements is not allowed
+// * It is not allowed to use refs
 //
-// Tarefas:
-// todo - O botão de login deve disparar a função login(), importada no topo deste arquivo, e passar os dados necessários.
-// todo - Desabilite o botão de Login caso o e-mail esteja em branco OU a senha for menor que 6 dígitos.
-// todo - Desabilite o botão de Login equanto você está executando o login.
-// todo - Mostre uma mensagem de erro de login() caso o Login falhe. A mensagem deve ser limpa a cada nova tentativa de Login.
-// todo - Mostre um alerta caso o login seja efetuado com sucesso (javascript alert). Investigue a função login() para entender como ter sucesso na requisição.
+// Tasks:
+// TODO - The Login button must call the login() function, imported at the top of this file, and pass the necessary data.
+// TODO - Disable the Login button if the email is blank OR the password is less than 6 digits.
+// TODO - Disable the Login button while you are performing the login.
+// TODO - Show a login() error message if Login fails. The message must to be cleared in each new login attempt.
+// TODO - Show an alert if the login is successful (javascript alert). Investigate the login() function to understand how to succeed the request.
 
 export default function LoginForm() {
   return (
     <div className='wrapper'>
       <div className='login-form'>
         <h1>Login Form 🐞</h1>
-        {/* Coloque a mensagem de erro de login na div abaixo. Mostre a div somente se houver uma mensagem de erro. */}
+        {/* Put the login error message in the div below. Show the div only if there is an error message. */}
         <div className='errorMessage'></div>
         <div className='row'>
           <label htmlFor={'email'}>Email</label>
